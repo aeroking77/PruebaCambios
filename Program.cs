@@ -141,6 +141,7 @@ namespace Interfaces
                             Console.WriteLine("6.-Listar Alumnos por indice");
                             Console.WriteLine("7.-Regresar al menu principal");
                             Console.WriteLine("8.-Asignar Alumno");
+                            Console.WriteLine("9.-Mostrar Alumnos de una escuela");
                             menuAlumnos = int.Parse(Console.ReadLine());
                             switch (menuAlumnos)
                             {
@@ -214,6 +215,9 @@ namespace Interfaces
                                     {
                                         escuelaService.AsignarAlumno(alumno);
                                     }
+                                    break;
+                                case 9:
+                                    Console.WriteLine("Esta es una prueba");
                                     break;
                                 default:
                                     Console.WriteLine("Opcion invalida inteta de nuevo");
